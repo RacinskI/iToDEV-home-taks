@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression test suite">
+    <listeners>
+        <listener class-name="automation.lib.listener.ExtentListener"/>
+        <listener class-name="automation.lib.listener.AnnotationTransformer"/>
+    </listeners>
+    <test name="regression">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="automation.frontend.test.*"/>
+        </packages>
+    </test>
+</suite>

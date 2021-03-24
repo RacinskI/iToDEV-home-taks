@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Default" verbose="2" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="automation.lib.listener.ExtentListener"/>
+        <listener class-name="automation.lib.listener.AnnotationTransformer"/>
+    </listeners>
+    <test name="main">
+        <packages>
+            <package name="automation.frontend.test.*"/>
+        </packages>
+    </test>
+</suite>

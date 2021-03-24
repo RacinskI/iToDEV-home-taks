@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke">
+    <listeners>
+        <listener class-name="automation.lib.listener.ExtentListener"/>
+        <listener class-name="automation.lib.listener.AnnotationTransformer"/>
+    </listeners>
+    <test name="smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="automation.frontend.test.*"/>
+        </packages>
+    </test>
+</suite>

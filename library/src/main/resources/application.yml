@@ -1,0 +1,23 @@
+spring:
+  cache:
+    type: none
+  main:
+    lazy-initialization: true
+wait:
+  explicit:
+    seconds: 15
+
+report:
+  baseDir: target/reports
+  allure: ${report.baseDir}/allure-report
+  extent:
+    dir: ${report.baseDir}/extent
+    file: ${report.extent.dir}/ExtentReport.html
+  screenshots: ${report.baseDir}/screenshots
+
+webDriver:
+  mode: selenium
+  browser: chrome
+
+app:
+  url: https://ito.lt
