@@ -1,0 +1,14 @@
+.idea/
+*.iml
+*.ipr
+*.iws
+target/
+build/
+.allure/
+out/
+lombok.config
+*.DS_Store
+.classpath
+.factorypath
+.project
+.settings/
